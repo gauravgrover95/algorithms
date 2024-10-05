@@ -12,7 +12,7 @@ public class JavaSort {
         Integer[] arr = { 1, 2, 7, 3, 6, 2, 9 };
         Arrays.sort(arr, Collections.reverseOrder());
         System.out.println(Arrays.toString(arr));
-
+    
 
         // int[] array = { 1, 2, 7, 3, 6, 2, 9 };
         // array = -Arrays.sort(-array);
