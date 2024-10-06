@@ -15,13 +15,7 @@ public class Duplicates {
     static int[] duplicates(int[] arr) {
         Map<Integer, Integer> counts = new HashMap<>();
         for (int i = 0; i < arr.length; ++i) {
-            if (counts.get(arr[i]) != null) {
-                Integer count = counts.get(arr[i]) + 1;
-                counts.put(arr[i], count);
-            }
-            else {
-                counts.put(arr[i], 1);
-            }
+            counts.put(arr[i], counts.getOrDefault(arr[i], 0) + 1);
         }
 
         List<Integer> list = new ArrayList<>();
